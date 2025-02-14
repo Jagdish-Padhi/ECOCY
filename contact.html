@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoCy</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
@@ -37,29 +37,31 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Turn Waste Into Resources</h1>
-        <p>Join the circular economy by exchanging waste for something valuable. Reduce landfill waste and make a
-            positive impact!</p>
-        <a href="#" class="cta-btn">Get Started</a>
+        <h1>Feel free to Contact Us!</h1>
+        <p>Your valuable feedback would matter a lot to improve our Ecosystem.</p>
     </section>
 
     <!-- Features Section -->
     <section class="features">
-        <h2>Why Choose EcoCy?</h2>
-        <div class="feature-cards">
-            <div class="card">
-                <h3>Easy Waste Listing</h3>
-                <p>List your waste items effortlessly and find someone or any industry who can repurpose them.</p>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Full Name" required>
             </div>
-            <div class="card">
-                <h3>Exchange & Barter</h3>
-                <p>Trade your waste items for something useful or simply give them away.</p>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your Email Address" required>
             </div>
-            <div class="card">
-                <h3>Eco-Friendly Impact</h3>
-                <p>Reduce your carbon footprint by giving waste a second life.</p>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Subject" required>
             </div>
-        </div>
+            <div class="form-group">
+                <label for="feedback">Feedback</label>
+                <textarea id="message" placeholder="Your Message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
     </section>
 
     <!-- Footer -->
