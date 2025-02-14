@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrade - Waste-to-Resource Exchange</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">EcoCy</div>
+        <button class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="dropdown">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Find Waste</a></li>
+            <li><a href="#">Find Industries</a></li>
+            <li><a href="#">List Waste</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Find Waste</a></li>
+            <li><a href="#">Find Industries</a></li>
+            <li><a href="#">List Waste</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Turn Waste Into Resources</h1>
+        <p>Join the circular economy by exchanging waste for something valuable. Reduce landfill waste and make a
+            positive impact!</p>
+        <a href="#" class="cta-btn">Get Started</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose EcoCy?</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>Easy Waste Listing</h3>
+                <p>List your waste items effortlessly and find someone or any industry who can repurpose them.</p>
+            </div>
+            <div class="card">
+                <h3>Exchange & Barter</h3>
+                <p>Trade your waste items for something useful or simply give them away.</p>
+            </div>
+            <div class="card">
+                <h3>Eco-Friendly Impact</h3>
+                <p>Reduce your carbon footprint by giving waste a second life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy 2025 ECOCY. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+            const hamburger = document.querySelector('.hamburger');
+            hamburger.classList.toggle('active');
+            const dropdown = document.querySelector('.dropdown');
+            dropdown.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
