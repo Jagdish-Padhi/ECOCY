@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find industry</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">EcoCy</div>
+        <button class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="dropdown">
+            <li><a href="/pages/index.html">Home</a></li>
+            <li><a href="#">Find Waste</a></li>
+            <li><a href="#">Find Industries</a></li>
+            <li><a href="#">List Waste</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+
+        <ul class="nav-links">
+            <li><a href="/pages/index.html">Home</a></li>
+            <li><a href="#">Find Waste</a></li>
+            <li><a href="#">Find Industries</a></li>
+            <li><a href="#">List Waste</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Choose Industry ?</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>Paper Industry</h3>
+                <p>Waste written papers, cards and similar things.</p>
+            </div>
+            <div class="card">
+                <h3>Plastic Industry</h3>
+                <p>Any type of plastic cover, bag, bottles or anything similar made with plastic.</p>
+            </div>
+            <div class="card">
+                <h3>Construction Industry</h3>
+                <p>Remained materials after building construction or broken parts at site etc.</p>
+            </div>
+            <div class="card">
+                <h3>Chemical Industry</h3>
+                <p>Waste chemical components in lab experiment etc.</p>
+            </div>
+            <div class="card">
+                <h3>Electronics Industry</h3>
+                <p>Parts of electronic device which is not useful and similar things.</p>
+            </div>
+            <div class="card">
+                <h3>Mechanical Industry</h3>
+                <p>Broken machine parts, metallic parts and similar things. </p>
+            </div>
+            <div class="card">
+                <h3>Food Industry</h3>
+                <p>Remained food items in parties or any festival or at house etc.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy 2025 ECOCY. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+            const hamburger = document.querySelector('.hamburger');
+            hamburger.classList.toggle('active');
+            const dropdown = document.querySelector('.dropdown');
+            dropdown.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
